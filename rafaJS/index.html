@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Welcome!</h1>
+      <p id="greeting">Hello, visitor</p>
+      <button onclick="createAndSaveFile()">Change my name</button>
+    </div>
+    <textarea name="content" id="conteudofile"></textarea>
+    <a href="outra.html">Ir para outra página</a>
+    <script>
+      // let count = 0;
+      let names = [];
+      function changeName(){
+        
+        while(names.length < 3){
+          let newName = prompt('Insert 3 names:');
+          names.push(newName);
+        }
+
+        let number = Number(prompt('Choose a number to show a name, int he same order before, starting from 0'))
+
+        for(let i = 0; i < names.length; i++){
+            if(i == number){
+              document.getElementById("greeting").textContent = `Hello, ${names[i]}`;
+            }
+        }
+      }
+
+      let content =""
+
+      async function createAndSaveFile() {
+        content = document.getElementById('conteudofile').value
+        try {
+          // Solicita ao usuário para salvar o arquivo
+          const fileHandle = await window.showSaveFilePicker({
+            suggestedName: prompt("qual nome vc quer para o aqruivo?"),
+            types: [
+              {
+                description: 'Text Files',
+                accept: {
+                  'text/plain': ['.txt'],
+                },
+              },
+            ],
+          });
+
+          // Escreve o conteúdo no arquivo
+          const writable = await fileHandle.createWritable();
+          await writable.write(content);
+          await writable.close();
+
+          alert('File saved successfully!');
+        } catch (error) {
+          console.error('Error creating file:', error);
+        }
+
+}
+
+
+
+
+
+      
+    </script>
+</body>
+</html>

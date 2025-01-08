@@ -1,0 +1,17 @@
+body {
+  background: rgb(124, 92, 66);
+  height: 100vh;
+}
+
+.container {
+  background: rgb(245, 245, 201);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  height: 80%;
+}
+
+button {
+  padding: 4px 8px;
+  background-color: rgb(173, 29, 29);
+}

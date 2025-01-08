@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: darkslategray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      border: 1px solid whitesmoke;
+      width: 300px;
+      height: 200px;
+      overflow: auto;
+      padding: 8px;
+    }
+
+    /* Estilizando o scrollbar */
+    .container::-webkit-scrollbar {
+      margin: 10px;
+      width: 12px; /* Largura do scrollbar */
+    }
+
+    .container::-webkit-scrollbar-track {
+      background: rgb(255, 255, 255); /* Cor do trilho */
+      border-radius: 10px;      
+    }
+
+    .container::-webkit-scrollbar-thumb {
+  background: rgb(40, 40, 44);
+  color: blue;
+  border-radius: 10px;
+  border: 2px solid whitesmoke; /* Adiciona borda que age como espaçamento */
+}
+
+    .container::-webkit-scrollbar-thumb:hover {
+      background: darkblue; /* Efeito hover */
+
+    }
+  </style>
+  <title>Scroll</title>
+</head>
+<body>
+  <div class="container">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quae qui, sapiente doloribus harum omnis eos vero dignissimos corrupti voluptatibus quam aliquam, consectetur, beatae fugit quisquam? Tempora unde voluptates alias.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ipsum quaerat expedita deserunt inventore consequuntur quae nemo nesciunt optio? Illo voluptatem accusamus nihil, sequi voluptas repellat vitae rerum reiciendis pariatur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dicta dignissimos officiis possimus perferendis eveniet at numquam earum cumque! Neque provident dolor mollitia ipsa nihil explicabo rem. Enim, adipisci autem.</p>
+  </div>
+</body>
+</html>
