@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #9db6a3;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh; 
+
+}
+
+header
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  background-color: #3F5B5E;
+  box-shadow: 4px 4px 10px rgba(24, 22, 22, 0.473);
+  position: relative;
+} 
+.logo img{
+   height: 110px;
+}
+
+header .nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  /* border: 1px solid white; */
+  gap: 25px;
+}
+
+header .nav-header a {
+  color: #fefef2;
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in;
+}
+header .nav-header a:hover{
+  color: #0AB356;
+  
+}
+
+.idioma
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  transition: background-color 0.19s ease-in-out;
+  cursor: pointer;
+}
+
+.idioma span{
+  color: #f3f3f4;
+  cursor: pointer;
+  
+}
+.idioma:hover{
+  background-color: #0AB356;
+  border: none;
+  scale: 1.02;
+}
+span.material-symbols-rounded
+{
+  display: none;
+  cursor: pointer;
+}
+
+
+/* VIDEO MAIN */
+main{
+  /* background-color: #98a7c7; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.banner-video{
+  /* background-image: url('./assets/imgs/desmatamento.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+
+  width: 100%;
+  height: 100%;
+}
+.video {
+  width: 100%;
+  height: 580px;
+}
+.video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 0 0 20px 20px; */
+  transition: height 0.4s ease-out;
+}
+
+/* END VIDEO MAIN */
+
+
+/* NOTICIAS - MANCHETES */
+
+
+.manchetes-section{
+
+  /* background-color: #0AB356; */
+  /* border: 1px solid black; */
+  /* background-color: white; */
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.manchetes-section h2 {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.manchetes-content{
+  width: 100%;
+  padding: 10px 30px;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid purple; */
+
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 250px;
+  border: 2px solid rgb(109, 133, 66);
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(243, 242, 242, 0.815);
+}
+/* .article:hover {
+  border: 1px solid black;
+  transition: border 0.4s ease-in;
+} */
+.bg
+{
+  width: 100%;
+  height: 400px;
+  /* border-radius: 4px; */
+}
+
+#not1 {
+  background-image: url('./assets/imgs/noticias/campinasDesma.png');
+  background-position: center;
+  background-size: cover;
+}
+#not2 {
+  background-image: url('./assets/imgs/noticias/ondasDeCalor.png');
+  background-position: center;
+  background-size: cover;
+  background-position-x: right;
+}
+#not3 {
+  background-image: url('./assets/imgs/noticias/planaltoPlanoCNN.png');
+  background-position: center;
+  background-size: cover;
+}
+#not4 {
+  background-image: url('./assets/imgs/noticias/simuDenunGarimpo.png');
+  background-position: center;
+  background-size: cover;
+}
+
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 8px;
+  /* color: white; */
+}
+.title h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.title a {
+  align-content: center;
+  justify-self: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #295135;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+.title a:hover {
+  background-color: rgb(55, 63, 41);
+  color: white;
+  /* scale: 0.98; */
+}
+/* END NOTICIAS - MANCHETE */
+
+
+/* Denuncia section */
+.denuncia-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  /* background-color: rgb(56, 56, 56); */
+}
+.denuncia-sec h2{
+  width: 100%;
+  text-align: center;
+  color: #FFFF;
+  font-size: 30px;
+  font-weight: 600;
+
+  /* margin-left: 30px; */
+}
+
+.denuncia-sec .content-denuncia{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  gap: 38px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #8E877A;
+  color: #ffff;
+}
+
+.content-denuncia a{
+  align-self: center;
+  background-color: #E40505;
+  /* padding: px; */
+  height: 60px;
+  width: 280px;
+  /* line-height: inherit; */
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+.txtDenun h3{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+.txtDenun{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+}
+.txtDenun p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer{ 
+  background-color: #3F5B5E;
+  /* padding: 1.5rem; */
+  /* width: 100%; */
+  color: white;
+  font-weight: 300;
+  margin-top: auto;
+  /* height: 100%; */
+}
+
+.contatos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  /* border: 2px solid rgb(0, 81, 255); */
+  padding: 10px;
+  /* & .numeros{
+    /* border: 2px solid #ffcc00; 
+  } */
+}
+
+
+
+.fooContent{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border: 2px solid purple; */
+}
+
+.agente{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* border: 2px solid white; */
+}
+.agente strong {
+  /* border: 1px solid; */
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.faleconosco {
+  display: flex;
+  gap: 10px;
+}
+
+.faleconosco span img{
+ 
+  width: 30px;
+   height: 30px;
+   cursor: pointer;
+}
+
+.faleconosco span img:hover {
+  scale: 1.1;
+}
+

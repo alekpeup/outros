@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./assets/css/responsivo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=translate" />
+
+  <title>Home</title>
+</head>
+<body >
+    <header >
+      <div class="logo">
+        <img src="./assets/imgs/logo_ecoecho-transparent.png" alt="">
+      </div>
+      <nav class="nav-header content" id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#denuncia">Denúncia</a>
+        <a href="./pages/aboutus.html">Quem somos?</a>
+      </nav>
+      <div class="idioma" id="translateButton">
+        <span class="material-symbols-outlined" >
+          translate
+          </span>
+      </div>
+      <div class="menu" onclick="shownav()">
+        <span class="material-symbols-rounded" >
+          menu
+          </span>
+      </div>
+    </header>
+    <!-- <aside class="menu-aside" id="menu-nav-side">
+      <div class="content-navright">
+        <a href="./index.html">Home</a>
+        <a href="./pages/orientacoes.html">Orientações</a>
+        <a href="#denuncia">Denúncia</a>
+        <a href="./pages/aboutus.html">Quem somos?</a>
+      </div>
+    </aside> -->
+
+    <main>
+   
+      <section class="banner-video">
+      
+        <div class="video"> 
+          <video id="videos" autoplay loop muted playsinline> <source src="./assets/video/banner_images.mp4" type="video/mp4">
+          </video> 
+        </div>
+      </section>
+
+      <section class="manchetes-section" id="noticias">
+        <h2>Notícias</h2>
+          <div class="manchetes-content">
+           
+            <article class="article" >
+                <div class="bg" id="not1"></div>
+                <div class="title">
+                  <h3>Em 4 anos, dobram denúncias sobre desmatamento em Campinas</h3>
+                  <a href="https://g1.globo.com/sp/campinas-regiao/noticia/2023/05/25/em-4-anos-dobram-denuncias-sobre-desmatamento-em-campinas-veja-areas-afetadas.ghtml" target="_blank">Ler Mais</a>
+                </div>
+            </article>
+            <article class="article" >
+                <div class="bg" id="not2"></div>
+                <div class="title">
+                  <h3>Mudança climática deixou ondas de calor mortais 35 vezes mais prováveis</h3>
+                  <a href="https://veja.abril.com.br/mundo/mudanca-climatica-deixou-ondas-de-calor-mortais-35-vezes-mais-provaveis/" target="_blank">Ler Mais</a>
+                </div>
+            </article>
+            <article class="article">
+                <div class="bg"  id="not3"></div>
+                <div class="title">
+                  <h3>Planalto analisa aumento de pena para crimes ambientais | CNN Brasil</h3>
+                  <a href="https://www.cnnbrasil.com.br/politica/planalto-analisa-aumento-de-pena-para-crimes-ambientais/" target="_blank">Ler Mais</a>
+                </div>
+            </article>
+            <article class="article" >
+                <div class="bg" id="not4"></div>
+                <div class="title">
+                  <h3>Simulador de voo permite denunciar desmatamento e garimpo ilegal na Amazônia</h3>
+                  <a href="https://www.cnnbrasil.com.br/tecnologia/simulador-de-voo-denuncia-desmatamento-e-garimpo-na-amazonia/" target="_blank">Ler Mais</a>
+                </div>
+            </article>
+          </div>
+      </section>
+
+      <section class="denuncia-sec" id="denuncia">
+         
+          <div class="content-denuncia">
+            <h2>Denúncia</h2>
+            <div class="txtDenun">
+              <p>
+                <strong class="subtitulos">DENUNCIE!</strong><br>
+                Proteja a nossa natureza e florestas!
+                Para que a natureza e as florestas sejam preservadas precisamos nos ajudar, e denunciar qualquer comportamento agressivo com a nossa flora brasileira, sejam queimadas, desmatamento ou agressão à vida das nossas matas. Para um futuro melhor, contamos com o seu apoio
+              </p>
+              
+              <h3>Como denunciar?</h3>
+              <p>
+                Clique em "denunciar", preencha o formulário e conclua a sua denúncia.
+                Juntos, podemos fazer a diferença! <strong class="subtitulos">DENUNCIE!</strong/> Para um futuro melhor, contamos com o seu apoio! Vamos proteger o nosso planeta!
+              </p>
+            </div>
+              <a href="./pages/denuncia.html" id="denunciarbtn" class="denunciarbtn">Denunciar</a>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fooContent">
+        <div class="contatos">
+          <h2>Contatos</h2>
+
+          <div class="numeros">
+            <p>IBAMA: 0800 618080</p>
+            <p>PM Ambiental: 190</p>
+            <p>S.O.S Mata Atlântica: (11) 3366-1050</p>
+          </div>
+        </div>
+        <div class="agente">
+          <strong>© 2024 EcoEcho. Todos os direitos reservados.</strong>
+          <div class="faleconosco">
+            <span>
+              <img  src="./assets/imgs/icons/instagram.png" alt="">
+            </span>
+            <span>
+              <img src="./assets/imgs/icons/whatsapp.png" alt="">
+            </span>
+            <span>
+              <img src="./assets/imgs/icons/facebook.png" alt="">
+            </span>
+          </div>  
+        </div>
+      </div>
+    </footer>
+
+    <script>
+       window.onload = function() { 
+        var video = document.getElementById('videos'); 
+        video.play(); 
+      };
+    </script>
+    <script src="./assets/scripts/menu.js"></script>
+    <script src="/api-translate.js"></script>
+</body>
+</html>
