@@ -1,0 +1,44 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hoverBlock 
+{
+  width: 500px;
+  height: 70px;
+  background-color: #888400;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.hoverBlock:hover
+{
+  animation-name: mover;
+  animation-duration: 10s;
+}
+
+
+
+.animatedBlock{
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
+
+
+@keyframes mover {
+  0%{
+    translate: 0;
+  }
+
+  100%{
+    translate: 20px;
+    transform: rotateX(255deg);
+    box-shadow: -11px 11px 4px black;
+  }
+}
