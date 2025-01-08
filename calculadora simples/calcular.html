@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <input type="number" id="v1">
+    <input type="text" id="operador">
+    <input type="number" id="v2">
+    <button type="button" onclick="show()">Calcular</button>
+
+
+
+    <script>
+      
+
+      function calcular(v1, v2, operador){
+        switch (operador){
+          case "+":
+            v1 + v2;
+            break;
+          
+          case "-":
+            v1 - v2;
+            break;
+        }
+        let resultado = operador;
+        return resultado;
+      }
+
+      function show(){
+        let valor1 = document.getElementById('v1').value;
+        let valor2 = document.getElementById('v2').value;
+        let sinal = document.getElementById('operador').value;
+
+
+        calcular(valor1, valor2, sinal);
+      }
+
+
+    </script>
+    
+    
+</body>
+</html>

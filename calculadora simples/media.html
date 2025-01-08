@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media</title>
+</head>
+<body>
+    <label for="posicao1">Posição:</label>
+    <input type="text" name="p1" id="p1">
+
+    <label for="t">Tempo:</label>
+    <input type="text" name="tempo" id="tempo">
+
+
+    <label for="posicao2">Posição:</label>
+    <input type="text" name="p2" id="p2">
+
+    <button type="button" id="vmBTN" onclick="mostrar()">Calcular Velocidade média</button>
+
+    <p id="vm-output"></p>
+    <p id="vm"></p>
+
+    <h2>distancia</h2>
+    <p id="distancia"></p>
+    <img src="" alt="" id="imagem">
+
+
+    <h2 id="palavras"></h2>
+
+  <script>
+
+    function palavras(fname, lastname){
+      return fname + lastname;
+    }
+
+    function mostrar(){
+      let imagem = document.getElementById('imagem');
+      let p1 = document.getElementById('p1').value;
+      let p2 = document.getElementById('p2').value;
+      let t = document.getElementById('tempo').value; 
+      let vmOutput = document.getElementById('vm-output');
+      let vmn = document.getElementById('vm')
+      let distancia = p2 - p1;
+      let dist = document.getElementById('distancia')
+      let vm = (p2 - p1) / t;
+      if(vm < 80){
+        vmOutput.textContent = "Allright, dude. Keep going safe"
+        vmn.textContent = vm;
+        dist.textContent = distancia;
+        imagem.src = "assets/img/homer.jpeg";
+      }else {
+        vmOutput.textContent = "stop dude, your punished";
+        vmn.textContent = vm;
+        dist.textContent = distancia;
+        imagem.src = "assets/img/polisa.png";
+      }
+
+
+     document.getElementById('palavras').textContent = palavras(p1, p2);
+    }
+
+ 
+  </script>
+</body>
+</html>

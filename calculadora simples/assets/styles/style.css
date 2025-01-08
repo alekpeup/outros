@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  text-align: center;
+  padding: 8px;
+  width: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: blueviolet;
+  color: #fff;
+}
+input {
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+}
+
+main { 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(102, 102, 102);
+  height: 100%;
+}
+
+.title-div {
+  border: 2px solid black;
+  text-align: center;
+}
+.title-div h1 {
+  font-size: 2.9em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+.calculadoraContainer {
+  border: 2px solid white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadoraContainer .calculadora {
+  display: flex;
+  gap: 10px;
+  border: 2px solid black;
+  height: 50%;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.calculadora .input-space {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20%;
+  border: 2px solid red;
+  padding: 8px;
+}
+
+.input-space input {
+  font-size: 1.4em;
+}
+
+
+.resposta-btn {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+

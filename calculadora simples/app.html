@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd and even numbers verification</title>
+</head>
+<body>
+    <header>
+        <h1>Do you want to verify if a number is odd or even? Check the program below</h1>
+    </header>
+    <main>
+      <section>
+        <p>Well, you just need to insert a number into the input and then click on the button verification to get your answer</p>
+      </section>
+      <section class="getAndVerify">
+          <div class="gettingNumbers">
+              <input type="text" id="number" placeholder="insert a number">
+              
+              <div class="buttonVerification">
+                <button style="margin: 20px;" type="button" onclick="verification()">Verificar</button>
+              </div>
+          </div>
+      </section>
+
+      <section class="verifyAnswer">
+          <div class="answerArea">
+            <p id="answer"></p>
+          </div>
+      </section>
+    </main>
+
+
+    <script>
+  
+
+      function verification() {
+        let numberr = Number(document.getElementById('number').value);
+        let answer = document.getElementById('answer');
+        let verificationN = numberr % 2;
+
+        if (verificationN === 0){ 
+          answer.textContent = "Even";
+        }else{
+          answer.textContent = "Odd";
+        }
+      
+      }
+    </script>
+</body>
+</html>
